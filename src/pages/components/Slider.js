@@ -3,7 +3,6 @@ import SliderCarousel from "./SliderCarousel";
 export default function Slider() {
   
   return (
-    <>
       <div className="slider">
         <div className="container">
           <div className="row">
@@ -37,6 +36,5 @@ export default function Slider() {
           </div>
         </div>
       </div>
-    </>
   );
 }

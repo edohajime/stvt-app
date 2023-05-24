@@ -2,7 +2,6 @@ import ParticipantRegisterModal from "./ParticipantRegisterModal";
 
 export default function Participants() {
   return (
-    <>
       <div className="participants">
         <div className="participants-bg"></div>
         <div className="container">
@@ -147,6 +146,5 @@ export default function Participants() {
           </div>
         </div>
       </div>
-    </>
   );
 }

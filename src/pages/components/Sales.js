@@ -1,6 +1,5 @@
 export default function Sales() {
   return (
-    <>
       <div
         className="sales"
         style={{
@@ -85,6 +84,5 @@ export default function Sales() {
           </div>
         </div>
       </div>
-    </>
   );
 }

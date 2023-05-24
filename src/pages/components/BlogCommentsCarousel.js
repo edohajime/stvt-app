@@ -9,7 +9,7 @@ const flickityOps = {
   pageDots: true,
   wrapAround: true,
   autoPlay: 3000,
-  cellSelector: ".blog-comment-item",
+  // cellSelector: ".blog-comment-item",
 };
 
 function BlogCommentsCarousel() {

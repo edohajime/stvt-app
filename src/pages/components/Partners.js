@@ -2,7 +2,6 @@ import PartnersCarousel from "./PartnersCarousel";
 
 export default function Partners() {
   return (
-    <>
       <div
         className="partners"
         style={{
@@ -69,6 +68,5 @@ export default function Partners() {
           </div>
         </div>
       </div>
-    </>
   );
 }

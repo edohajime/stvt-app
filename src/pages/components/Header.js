@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
-    <>
       <div className="header">
         <div className="container">
           <div className="row">
@@ -60,6 +59,5 @@ export default function Header() {
           </div>
         </div>
       </div>
-    </>
   );
 }

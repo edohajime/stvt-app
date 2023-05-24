@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import BlogCarousel from "./BlogCarousel";
-import BlogCommentsCarousel from "./BlogCommentsCarousel";
+import React from "react";
+// import BlogCommentsCarousel from "./BlogCommentsCarousel";
 
-export default function Blog() {
-  return (
-    <>
+export default class Blog extends React.Component {
+  render() {
+    return (
       <div
         className="blog"
         style={{
@@ -23,7 +24,7 @@ export default function Blog() {
             </div>
             <div className="row hidden-xs">
               <div className="col-md-4">
-                <Link to="detail">
+                <Link to="/detail">
                   <div className="blog-item">
                     <img
                       src="./images/Blog_EinsteinFingerprint.jpg"
@@ -48,47 +49,51 @@ export default function Blog() {
                 </Link>
               </div>
               <div className="col-4 hidden-xs">
-                <div className="blog-item">
-                  <img
-                    src="./images/Blog_GandhiFingerprint.jpg"
-                    alt="Gandhi"
-                  ></img>
-                  <div className="blog-content">
-                    <h5>
-                      NHỮNG BÍ ẨN THÚ VỊ VỀ DẤU VÂN TAY mà bạn chưa từng biết
-                    </h5>
-                    <p>
-                      Dù rằng vân tay cũng có một số lượng chủng vân tay, loại
-                      và nhóm vân tay nhất định. Tuy nhiên, chúng lại ...
-                    </p>
-                    <div className="blog-expanded">
-                      XEM THÊM &nbsp;
-                      <i className="fa-solid fa-arrow-right"></i>
+                <Link to="/detail">
+                  <div className="blog-item">
+                    <img
+                      src="./images/Blog_GandhiFingerprint.jpg"
+                      alt="Gandhi"
+                    ></img>
+                    <div className="blog-content">
+                      <h5>
+                        NHỮNG BÍ ẨN THÚ VỊ VỀ DẤU VÂN TAY mà bạn chưa từng biết
+                      </h5>
+                      <p>
+                        Dù rằng vân tay cũng có một số lượng chủng vân tay, loại
+                        và nhóm vân tay nhất định. Tuy nhiên, chúng lại ...
+                      </p>
+                      <div className="blog-expanded">
+                        XEM THÊM &nbsp;
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
               <div className="col-4 hidden-xs">
-                <div className="blog-item">
-                  <img
-                    src="./images/Blog_DisneyFingerprint.jpg"
-                    alt="Disney"
-                  ></img>
-                  <div className="blog-content">
-                    <h5>
-                      CHỦNG VÂN TAY CỦA WALTER ELIAS DISNEY - THIÊN BẨM CỦA SỰ
-                      SÁNG TẠO TUYỆT VỜI
-                    </h5>
-                    <p>
-                      Walter Elias Disney là một doanh nhân, nhà làm phim hoạt
-                      hình, nhà văn, diễn viên lồng tiếng và nhà sản...
-                    </p>
-                    <div className="blog-expanded">
-                      XEM THÊM &nbsp;
-                      <i className="fa-solid fa-arrow-right"></i>
+                <Link to="/detail">
+                  <div className="blog-item">
+                    <img
+                      src="./images/Blog_DisneyFingerprint.jpg"
+                      alt="Disney"
+                    ></img>
+                    <div className="blog-content">
+                      <h5>
+                        CHỦNG VÂN TAY CỦA WALTER ELIAS DISNEY - THIÊN BẨM CỦA SỰ
+                        SÁNG TẠO TUYỆT VỜI
+                      </h5>
+                      <p>
+                        Walter Elias Disney là một doanh nhân, nhà làm phim hoạt
+                        hình, nhà văn, diễn viên lồng tiếng và nhà sản...
+                      </p>
+                      <div className="blog-expanded">
+                        XEM THÊM &nbsp;
+                        <i className="fa-solid fa-arrow-right"></i>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </div>
             </div>
             <div className="row block-xs">
@@ -274,12 +279,12 @@ export default function Blog() {
                 </div>
               </div>
             </div>
-            <div className="row block-xs">
+            {/* <div className="row block-xs">
               <BlogCommentsCarousel />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-    </>
-  );
+    );
+  }
 }

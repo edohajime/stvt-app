@@ -8,7 +8,7 @@ const flickityOps = {
   pageDots: true,
   wrapAround: true,
   autoPlay: 1500,
-  cellSelector: ".carousel-cell",
+  // cellSelector: ".carousel-cell",
 };
 function SliderCarousel() {
   return (

@@ -8,7 +8,7 @@ const flickityOps = {
   pageDots: true,
   wrapAround: true,
   autoPlay: 3000,
-  cellSelector: ".expert-item",
+  // cellSelector: ".expert-item",
 };
 function ExpertsCarousel() {
   return (

@@ -1,8 +1,11 @@
 import { Col, Container, Row } from "react-bootstrap";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
-export default function BlogDetail() {
+const BlogDetail = () => {
   return (
-    <>
+    <div>
+      <Header />
       <div className="blog-detail">
         <Container>
           <Row>
@@ -13,14 +16,14 @@ export default function BlogDetail() {
             </Col>
           </Row>
           <Row className="mb-4">
-            <Col>
+            <Col xs={12} lg={6}>
               <img
                 className="blog-image"
                 src="./images/Blog_EinsteinFingerprint.jpg"
                 alt="Einstein Fingerprint"
               ></img>
             </Col>
-            <Col>
+            <Col xs={12} lg={6}>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna
                 viverra nunc, semper pellentesque egestas consequat ac etiam.
@@ -75,6 +78,8 @@ export default function BlogDetail() {
           </Row>
         </Container>
       </div>
-    </>
+      <Footer />
+    </div>
   );
-}
+};
+export default BlogDetail;

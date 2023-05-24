@@ -2,7 +2,6 @@ import SocialCarousel from "./ServicesCarousel";
 
 export default function Services() {
   return (
-    <>
       <div className="services">
         <div className="services-bg"></div>
         <div className="container">
@@ -115,6 +114,5 @@ export default function Services() {
           </div>
         </div>
       </div>
-    </>
   );
 }

@@ -1,5 +1,7 @@
 import Blog from "./components/Blog";
 import Experts from "./components/Experts";
+import Footer from "./components/Footer";
+import Header from "./components/Header";
 import Participants from "./components/Participants";
 import Partners from "./components/Partners";
 import Sales from "./components/Sales";
@@ -8,7 +10,9 @@ import Slider from "./components/Slider";
 
 export default function Home() {
   return (
-    <>
+    <div>
+      <Header />
+
       <Slider />
 
       <Services />
@@ -22,6 +26,8 @@ export default function Home() {
       <Sales />
 
       <Partners />
-    </>
+
+      <Footer />
+    </div>
   );
 }

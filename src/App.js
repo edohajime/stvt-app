@@ -1,23 +1,24 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Layout from "./Layout";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import BlogDetail from "./pages/BlogDetail";
-import Blog from "./pages/components/Blog";
+import React from "react";
 
-function App() {
+const App = () => {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <Home />,
+    },
+    {
+      path: "/detail",
+      element: <BlogDetail />,
+    },
+  ]);
   return (
     <>
-      <BrowserRouter>
-        <Routes>
-          <Route path="*" element={<Layout />}>
-            <Route index element={<Home />}></Route>
-            <Route path="blog" element={<Blog />}></Route>
-            <Route path="detail" element={<BlogDetail />}></Route>
-          </Route>
-        </Routes>
-      </BrowserRouter>
+      <RouterProvider router={router} />
     </>
   );
-}
+};
 
 export default App;

@@ -8,7 +8,7 @@ const flickityOps = {
   pageDots: false,
   wrapAround: true,
   autoPlay: 1500,
-  cellSelector: ".service-item",
+  // cellSelector: ".service-item",
 };
 function SocialCarousel() {
   return (

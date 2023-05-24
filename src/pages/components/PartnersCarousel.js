@@ -9,7 +9,7 @@ const flickityOps = {
   pageDots: false,
   wrapAround: true,
   autoPlay: 1500,
-  cellSelector: ".partner-item",
+  // cellSelector: ".partner-item",
 };
 
 function PartnersCarousel() {
